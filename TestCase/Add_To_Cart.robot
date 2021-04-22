@@ -2,9 +2,9 @@
 Resource    ./../Resources/import.robot
 
 *** Test Cases ***
-TC1_Add 2 Sony tv to cart
-    [Setup]    Common.Begin web test
-    [Teardown]    Common.Teardown actions
+TC1 - Add 2 TV of Brand Sony To Cart with difference price
+    [Setup]       [Common] - Begin web test
+    [Teardown]    [Common] - Teardown actions
     
     Set Selenium Timeout    20s
     [Central] - Search for product

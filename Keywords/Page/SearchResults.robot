@@ -14,7 +14,6 @@ Resource    ./../../Resources/import.robot
 [Search Result] - Get number return product result
     Wait Until Element Is Visible    ${eImg_1stProductList}
     ${count} =  Get Element Count    ${List_ProductReturn}
-    #Log To Console    Count:${count}-1
     ${rand_Product} =    Evaluate    random.randint(0, ${count}-1)    random
     Log To Console    Random:${rand_Product}
     Set Global Variable    ${rand_Product}

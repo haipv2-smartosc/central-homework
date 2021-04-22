@@ -1,3 +1,3 @@
 *** Variables ***
-${BROWSER} =      Chrome
-${TXT_SEARCH} =    TV
+${BROWSER}          Chrome
+${TXT_SEARCH}       TV

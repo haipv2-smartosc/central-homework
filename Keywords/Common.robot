@@ -2,10 +2,10 @@
 Resource    ./../Resources/import.robot
 
 *** Keywords ***
-Begin web test
+[Common] - Begin web test
     Open Browser        about:blank        ${BROWSER}
     Delete All Cookies
     Set Window Size    1920    1080
 
-Teardown actions
+[Common] - Teardown actions
     Close Browser
